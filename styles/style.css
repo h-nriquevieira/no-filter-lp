@@ -33,6 +33,10 @@ img {
     max-width: 100%;;
 }
 
+.mobile-hidden {
+    display: none;
+}
+
 /* =================================
    Layout
    ================================= */
@@ -312,6 +316,40 @@ header {
     transform: scaleX(-1);
 }
 
+.reviews-cards-container {
+    padding-top: 4rem;
+    background-image: url(../img/reviews-quote-1.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 115px;
+}
+
+.reviews-cards-container-inner {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.review-card {
+    min-width: 305px;
+    min-height: 325px;
+    background-color: #fff;
+    padding: 1.25rem 2rem;
+    box-shadow: 0px 2px 50px rgba(67, 81, 155, 0.12);
+    border: none;
+    margin-right: 1rem;
+}
+
+.review-card:first-of-type {
+    margin-left: 4rem;
+}
+
+.review-card img {
+    max-width: 65px;
+}
+
 /* =================================
    Typography
    ================================= */
@@ -431,4 +469,32 @@ header {
 .caroussel-description {
     font-size: .75rem;
     line-height: 200%;
+}
+
+.reviews {
+    text-align: center;
+    font-weight: 300;
+}
+
+.reviews h2 {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.reviews p {
+    font-size: .875rem;
+}
+
+.reviews-cards-container .review-card {
+    text-align: left;
+    font-size: .875rem;
+    letter-spacing: .05rem;
+    line-height: 200%;
+    color: #101820ea;
+}
+
+.reviews-cards-container .review-card p.name {
+    font-size: .75rem;
+    font-weight: 500;
+    color: #40C1AC;
 }
