@@ -232,6 +232,10 @@ header {
     position: relative;
 }
 
+.left-image {
+    margin-bottom: .5rem;
+}
+
 .images-container .before-after-circle {
     max-width: 61px 
 }
