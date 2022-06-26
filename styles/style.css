@@ -29,6 +29,10 @@ body {
     padding: 0 1rem;
 }
 
+img {
+    max-width: 100%;;
+}
+
 /* =================================
    Layout
    ================================= */
@@ -40,6 +44,7 @@ nav {
     align-items: center;
     padding: .5rem 0;
     position: fixed;
+    z-index: 4;
     width: 100%;;
 }
 
@@ -186,7 +191,122 @@ header {
     max-width: 337px;
 }
 
+.before-after {
+    padding: 2rem 0;
+}
 
+.before-after-header h2 {
+    margin: 0;
+}
+
+.before-after-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .125rem;
+    margin-bottom: 1rem;
+}
+
+.before-after-icon {
+    width: 4px;
+    height: 9px;
+}
+
+.before-after p:first-of-type {
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.caroussel {
+    margin-top: 3rem;
+    background-color: #000;
+}
+
+.caroussel img {
+    width: 100vw;
+}
+
+.images-container,
+.left-image,
+.right-image {
+    position: relative;
+}
+
+.images-container .before-after-circle {
+    max-width: 61px 
+}
+
+.before,
+.after,
+.before-after-circle {
+    position: absolute;
+    z-index: 2;
+}
+
+.before,
+.after {
+    background-color: #101820;
+    width: 98px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+}
+
+.before {
+    bottom: 20px;
+    left: 15px;
+}
+
+.after {
+    bottom: 20px;
+    right: 15px;
+}
+
+.before-after-circle {
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.caroussel-text {
+    display: grid;
+    grid-template-areas: "title . left right"
+                         "text  text text text";
+    align-items: center;
+    padding: 1.5rem 1rem;
+}
+
+.caroussel-title {
+    padding: 1rem;
+    margin: 0;
+    grid-area: title;
+    min-width: 18ch;
+}
+
+.caroussel-description {
+    grid-area: text;
+}
+
+.arrow {
+    background-color: #000;
+    border: none;
+    max-width: 45px;
+}
+
+.arrow img {
+    width: 42px;
+}
+
+.arrow-left {
+    grid-area: left;
+}
+
+.arrow-right {
+    grid-area: right;
+    margin-left:.5rem;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
 
 /* =================================
    Typography
@@ -267,4 +387,44 @@ header {
     font-size: .875rem;
     letter-spacing: .05rem;
     line-height: 32px;
+}
+
+.before-after {
+    text-align: center;
+    font-weight: 300;
+}
+
+.before-after h2 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 300%;
+}
+
+.before-after p {
+    color: #00000090;
+    font-size: .875rem;
+    line-height: 200%;
+    letter-spacing: 0.05rem;
+}
+
+.images-container .before-after-text {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+.caroussel-text .caroussel-title,
+.caroussel-text .caroussel-description {
+    color: #fff;
+    text-align: left;
+}
+
+.caroussel-title {
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.caroussel-description {
+    font-size: .75rem;
+    line-height: 200%;
 }
