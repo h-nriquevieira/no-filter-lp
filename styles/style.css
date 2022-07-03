@@ -350,6 +350,23 @@ header {
     max-width: 65px;
 }
 
+.working-hours {
+    background-image: url(../img/working-hours-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 490px;
+    padding-top: 6rem;
+}
+
+.working-hours p {
+    max-width: 280px;
+    margin-bottom: 5rem;
+}
+
+.working-hours td {
+    padding: .55rem 1.2rem .55rem .55rem;
+}
+
 /* =================================
    Typography
    ================================= */
@@ -497,4 +514,25 @@ header {
     font-size: .75rem;
     font-weight: 500;
     color: #40C1AC;
+}
+
+.working-hours h2 {
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.working-hours p {
+    font-weight: 300;
+    font-size: .875rem;
+    letter-spacing: .08rem;
+    color: #000000a0;
+}
+
+.working-hours table {
+    font-weight: 400;
+    letter-spacing: .08rem;
+}
+
+.right-align {
+    text-align: right;
 }
