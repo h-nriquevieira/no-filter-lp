@@ -33,9 +33,11 @@ img {
     max-width: 100%;;
 }
 
+.hidden,
 .mobile-hidden {
     display: none;
 }
+
 
 /* =================================
    Layout
