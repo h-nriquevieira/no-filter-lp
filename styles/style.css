@@ -367,6 +367,20 @@ header {
     padding: .55rem 1.2rem .55rem .55rem;
 }
 
+footer {
+    padding: 3rem 0 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icon {
+    margin-right: .5rem;
+    width: 25px;
+}
+
 /* =================================
    Typography
    ================================= */
@@ -535,4 +549,26 @@ header {
 
 .right-align {
     text-align: right;
+}
+
+footer h2 {
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: .75rem;
+    color: #000000a0;
+    line-height: 200%;
+    letter-spacing: .08rem;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: .75rem;
+}
+
+footer .accent {
+    color: #40C1AC;
 }
