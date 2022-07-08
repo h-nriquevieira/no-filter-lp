@@ -387,6 +387,47 @@ footer .container {
     width: 25px;
 }
 
+@media only screen and (min-width: 1024px) {
+
+        header {
+            background-image: url('../img/header-bg-desktop.png'), url('../img/header-bg-2-desktop.svg');
+            background-position: bottom right, center left;
+            background-repeat: no-repeat, no-repeat;
+            background-size: contain, 35%;
+            min-height: 100vh;
+        }
+
+        .btn-appointment {
+            max-width: 236px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 2rem;
+        }
+
+        nav {
+            background-color: initial;
+            justify-content: start;
+            margin-left: 10vw;
+            padding: 1rem 0;
+            position: static;
+        }  
+
+        .nav__items {
+            display: flex;
+            justify-content: space-around;
+            gap: 4rem;
+        }
+
+        .nav__items li {
+            list-style: none;
+        }
+
+        .header-container {
+            padding-left: 10vw;
+            padding-bottom: 6rem;
+        }
+
+}
+
 /* =================================
    Typography
    ================================= */
@@ -577,4 +618,22 @@ footer .copyright {
 
 footer .accent {
     color: #40C1AC;
+}
+
+@media only screen and (min-width: 1024px) {
+    .nav__items,
+    .nav__items a {
+        font-weight: 300;
+        font-size: .875rem;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .header-h2 {
+        font-size: 2rem;
+    }
+
+    .header-p {
+        font-size: 1rem;
+    }
 }
