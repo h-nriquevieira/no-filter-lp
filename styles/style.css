@@ -517,6 +517,79 @@ footer .container {
         .who-card .who-p {
             max-width: 596px;
         }
+
+        .images-container {
+            display: flex;
+            padding: 0;
+            gap: .5rem;
+            justify-content: center;
+        }
+
+        .images-container img {
+            max-width: 590px;
+        }
+
+        .images-container .before-after-circle {
+            max-width: 80px;
+        }
+
+        .before-after-text {
+            width: 140px;
+            height: 56px;
+        }
+
+       .images-container .before-after-text.before {
+            left: -2rem;
+            bottom: 1rem;
+        }
+
+        .images-container .before-after-text.after {
+            right: -2rem;
+            bottom: 1.75rem;
+        }
+
+        .left-image,
+        .right-image {
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .caroussel-text {
+            background-color: #101820;
+            display: grid;
+            grid-template-areas: "prev heading next"
+                                 "prev text    next";
+            column-gap: 3rem;
+            padding-bottom: 3rem;
+            justify-items: start;
+        }
+
+        .caroussel-text .arrow-left {
+            grid-area: prev;
+        }
+
+        .caroussel-text .arrow-right {
+            grid-area: next;
+            justify-self: end;
+        }
+
+        .caroussel-text h3 {
+            grid-area: heading;
+        }
+
+        .caroussel-text p {
+            grid-area: text;
+        }
+
+        .caroussel-text button.arrow img {
+            min-width: 64px; 
+            background-color: #101820;
+        }
+
+        .caroussel-text button.arrow {
+            background-color: #101820;
+            cursor: pointer;
+        }
 }
 
 /* =================================
@@ -766,6 +839,10 @@ footer .accent {
     }
 
     .who-we-are h3 {
+        font-size: 1.5rem;
+    }
+
+    .images-container p.before-after-text {
         font-size: 1.5rem;
     }
 }
