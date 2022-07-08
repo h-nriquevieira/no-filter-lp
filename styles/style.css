@@ -567,6 +567,7 @@ footer .container {
             column-gap: 3rem;
             padding-bottom: 3rem;
             justify-items: start;
+            min-height: 222px;
         }
 
         .caroussel-text .arrow-left {
@@ -594,6 +595,57 @@ footer .container {
         .caroussel-text button.arrow {
             background-color: #101820;
             cursor: pointer;
+        }
+
+        .reviews-cards-container {
+            background-image: url(../img/reviews-quote-1.svg), url('../img/reviews-quote-2.svg');
+            background-repeat: no-repeat, no-repeat;
+            background-position: top left, bottom right;
+            padding-bottom: 5rem;
+        }
+
+        .reviews-cards-container-inner {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .review-card {
+            max-width: 862px;
+            min-height: 214px;
+            height: 100px;
+            display: grid;
+            column-gap: 2rem;
+            grid-template-areas: "img text"
+                                 "img name"
+                                 "img .";
+        }
+        
+        .review-card.review-card-1 {
+            max-height: 214px;
+        }
+
+        .review-card img {
+            grid-area: img;
+            max-width: 160px;
+        }
+
+        .review-card p {
+            grid-area: text;
+            padding: 0;
+            margin: 0;
+        }
+
+        .review-card p.name {
+            grid-area: name;
+            align-self: start;
+        }
+
+        .review-card.review-card-2 {
+            align-self: end;
+        }
+
+        .review-card.review-card-3 {
+            align-self: center;
         }
 }
 
@@ -801,14 +853,16 @@ footer .accent {
     .header-h2,
     .about-h2,
     .services h2,
-    .before-after h2 {
+    .before-after h2,
+    .reviews h2 {
         font-size: 2rem;
     }
 
     .header-p,
     .about-p,
     .services p,
-    .before-after p {
+    .before-after p,
+    .reviews p {
         font-size: 1rem;
     }
 
@@ -851,5 +905,10 @@ footer .accent {
 
     .images-container p.before-after-text {
         font-size: 1.5rem;
+    }
+
+    .review-card p,
+    .reviews-cards-container .review-card p.name {
+        font-size: .97rem;
     }
 }
