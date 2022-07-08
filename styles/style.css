@@ -538,6 +538,11 @@ footer .container {
             height: 56px;
         }
 
+        .before-after-icon {
+            width: 7px;
+            height: 14px;
+        }
+
        .images-container .before-after-text.before {
             left: -2rem;
             bottom: 1rem;
@@ -795,13 +800,15 @@ footer .accent {
 
     .header-h2,
     .about-h2,
-    .services h2 {
+    .services h2,
+    .before-after h2 {
         font-size: 2rem;
     }
 
     .header-p,
     .about-p,
-    .services p {
+    .services p,
+    .before-after p {
         font-size: 1rem;
     }
 
