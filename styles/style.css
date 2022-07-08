@@ -440,6 +440,10 @@ footer .container {
             max-width: 326px;
         }
 
+        .services {
+            padding-bottom: 6rem;
+        }
+
         .services-cards-container .container {
             display: flex;
             width: 100vw;
@@ -456,6 +460,62 @@ footer .container {
 
         .services-card img {
             margin: 0 auto;
+        }
+
+        .services-last-p {
+            display: block;
+        }
+
+        .who-card {
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        .who-card-joana {
+            display: grid;
+            grid-template-areas: 'img h3'
+                                 'img p';
+            padding: 1rem 10vw;
+            background-image: url(../img/who-joana-bg.svg);
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+
+        .who-card-eliana {
+            display: grid;
+            grid-template-areas: 'h3 img'
+                                 'p img';
+            padding: 1rem 10vw;
+            background-image: url(../img/who-eliana-bg.svg);
+            background-repeat: no-repeat;
+            background-position: top left;
+        }
+
+
+        .who-card-joana picture,
+        .who-card-eliana picture {
+            grid-area: img;
+        }
+
+
+        .who-card-joana h3,
+        .who-card-eliana h3 {
+            grid-area: h3;
+            align-self: end;
+        }
+
+
+        .who-card-joana p
+        .eliana-p p {
+            grid-area: p;
+        }
+
+        .who-card-joana p {
+            justify-self: end;
+        }
+
+        .who-card .who-p {
+            max-width: 596px;
         }
 }
 
@@ -686,5 +746,26 @@ footer .accent {
 
     .services-card p {
         font-size: .875rem;
+    }
+
+    .services-last-p {
+        text-align: center;
+        font-size: .75rem;
+    }
+
+    .who-card-joana {
+        text-align: right;
+    }
+
+    .who-card-eliana {
+        text-align: left;
+    }
+
+    .who-we-are .who-p {
+        color: #fffffffd;
+    }
+
+    .who-we-are h3 {
+        font-size: 1.5rem;
     }
 }
