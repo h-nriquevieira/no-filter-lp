@@ -651,7 +651,7 @@ footer .container {
         .working-hours {
             background-image: url('../img/working-hours-bg-desktop.png');
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
         }
 
         .working-hours .container {
