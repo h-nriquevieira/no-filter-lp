@@ -647,6 +647,57 @@ footer .container {
         .review-card.review-card-3 {
             align-self: center;
         }
+
+        .working-hours {
+            background-image: url('../img/working-hours-bg-desktop.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .working-hours .container {
+            padding-left: 10vw;
+        }
+
+        .working-hours td {
+            padding-left: 0;
+            padding-right: 10rem;
+        }
+
+        .working-hours p {
+            max-width: 500px;
+            margin-bottom: 2rem;
+        }
+
+        footer .container {
+            display: grid;
+            grid-template-areas: "logo about contact"
+                                 ". copy .";
+            padding-bottom: 3rem;
+            justify-content: center;
+            column-gap: 6rem;
+            row-gap: 3rem;
+        }
+
+        footer img.footer-logo {
+            grid-area: logo;
+            min-width: 238px;
+        }
+
+        .footer-about-card {
+            max-width: 240px;
+        }
+
+        .footer-contact-card {
+            max-width: 360px;
+        }
+
+        .copyright {
+            grid-area: copy;
+        }
+
+        footer h2 {
+            margin: 0;
+        }
 }
 
 /* =================================
@@ -854,7 +905,8 @@ footer .accent {
     .about-h2,
     .services h2,
     .before-after h2,
-    .reviews h2 {
+    .reviews h2,
+    .working-hours h2 {
         font-size: 2rem;
     }
 
@@ -864,6 +916,11 @@ footer .accent {
     .before-after p,
     .reviews p {
         font-size: 1rem;
+    }
+
+    .working-hours p {
+        font-size: 1.125rem;
+        line-height: 32px;
     }
 
     .about-card p {
@@ -910,5 +967,13 @@ footer .accent {
     .review-card p,
     .reviews-cards-container .review-card p.name {
         font-size: .97rem;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    footer h2 {
+        font-size: 1.5rem;
     }
 }
