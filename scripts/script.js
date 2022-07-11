@@ -153,6 +153,37 @@ function previousSlide() {
 $arrowLeft.addEventListener('click', previousSlide);
 $arrowRight.addEventListener('click', nextSlide);
 
+// Large photos on before and after
+
+const $leftImage = document.querySelector('.left-image');
+const $rightImage = document.querySelector('.right-image');
+const $largeImageModal = document.querySelector('.before-after-large');
+const $closeIcon = document.querySelector('.close-icon');
+const $largeImage = document.querySelector('.large-image');
+const $body = document.querySelector('body');
+
+$leftImage.addEventListener('click', () => {
+    $largeImage.src = `./img/before-after-large/before-${counter + 1}.png`;
+    $largeImageModal.classList.remove('hidden');
+    $body.classList.add('overflow');
+})
+
+
+$rightImage.addEventListener('click', () => {
+    $largeImage.src = `./img/before-after-large/after-${counter + 1}.png`;
+    $largeImageModal.classList.remove('hidden');
+    $body.classList.add('overflow');
+})
+
+$closeIcon.addEventListener('click', () => {
+    $largeImageModal.classList.add('hidden');
+    $body.classList.remove('overflow');
+})
+
+function showModal() {
+    $largeImageModal.classList.remove('hidden');
+}
+
 // Change nav style on scroll
 
 const $header = document.querySelector("header");

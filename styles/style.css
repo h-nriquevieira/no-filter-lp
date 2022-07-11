@@ -62,6 +62,33 @@ button,
    Layout
    ================================= */
 
+.before-after-large {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #000000cc;
+    display: grid;
+    place-items: center;
+}
+
+.before-after-large.hidden {
+    display: none;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    cursor: pointer;
+}
+
 nav {
     background-color: #ffffff66;
     display: flex;
