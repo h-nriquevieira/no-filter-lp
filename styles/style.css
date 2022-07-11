@@ -20,6 +20,10 @@ html {
     --clr-accent: #101820;
 }
 
+* {
+    scroll-padding-top: 80px;
+}
+
 body {
     margin: 0;
     padding: 0;
