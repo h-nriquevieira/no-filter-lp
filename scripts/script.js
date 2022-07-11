@@ -152,3 +152,24 @@ function previousSlide() {
 
 $arrowLeft.addEventListener('click', previousSlide);
 $arrowRight.addEventListener('click', nextSlide);
+
+// Change nav style on scroll
+
+const $header = document.querySelector("header");
+const $nav = document.querySelector("nav");
+
+const headerOptions = {
+    rootMargin: "-200px 0px 0px 0px"
+};
+
+const headerObserver = new IntersectionObserver(function(entries, headerObserver) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            $nav.classList.add('scrolled');
+        } else {
+            $nav.classList.remove('scrolled');
+        }
+    })
+}, headerOptions);
+
+headerObserver.observe($header);
