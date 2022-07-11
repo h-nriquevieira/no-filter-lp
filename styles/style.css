@@ -48,6 +48,16 @@ img {
     margin: 0 auto;
 }
 
+a,
+button,
+.social-icon,
+.tel,
+.mail,
+.left-image,
+.right-image {
+    cursor: pointer;
+}
+
 /* =================================
    Layout
    ================================= */
