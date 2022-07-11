@@ -789,10 +789,13 @@ footer .container {
 }
 
 .btn-appointment,
-.btn-appointment-2 {
+.btn-appointment-2,
+a.a-btn,
+a.a-btn:visited {
     color: #fff;
     font-weight: 500;
     font-size: .875rem;
+    text-decoration: none;
 }
 
 .scrolled-only .address {
