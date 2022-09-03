@@ -638,6 +638,8 @@ footer .container {
             display: grid;
             grid-template-areas: "prev heading next"
                                  "prev text    next";
+            grid-template-columns: 64px 1fr 64px;
+            grid-template-rows: 54px 1fr;
             column-gap: 3rem;
             padding-bottom: 3rem;
             justify-items: start;
@@ -659,6 +661,7 @@ footer .container {
 
         .caroussel-text p {
             grid-area: text;
+            align-self: start;
         }
 
         .caroussel-text button.arrow img {
