@@ -27,12 +27,6 @@ const content = [
         description: 'Classic lashes is our most natural set that will give you subtle drama on your eyes.'
     },
     {
-        before: document.querySelector('.js-img-before-4'),
-        after: document.querySelector('.js-img-after-4'),
-        title: 'Custom treatment',
-        description: 'We mix a variety of treatments personalized according to the need of every single client. You are unique and your skin is not the same as everyone else’s!'
-    },
-    {
         before: document.querySelector('.js-img-before-5'),
         after: document.querySelector('.js-img-after-5'),
         title: 'Lympathic Drainage',
@@ -119,10 +113,10 @@ const content = [
 ]
 
 function nextSlide() {
-    if (counter === 17) {
+    if (counter === 16) {
         counter = 0;
-        content[17].before.classList.add('hidden');
-        content[17].after.classList.add('hidden');
+        content[16].before.classList.add('hidden');
+        content[16].after.classList.add('hidden');
     } else {
         counter++;
         content[counter-1].before.classList.add('hidden');
@@ -136,7 +130,7 @@ function nextSlide() {
 
 function previousSlide() {
     if (counter === 0) {
-        counter = 17;
+        counter = 16;
         content[0].before.classList.add('hidden');
         content[0].after.classList.add('hidden');
     } else {
