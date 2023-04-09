@@ -198,3 +198,16 @@ const headerObserver = new IntersectionObserver(function(entries, headerObserver
 }, headerOptions);
 
 headerObserver.observe($header);
+
+const photoGallery = document.querySelector('.photo-gallery')
+
+new Glider(document.querySelector('.c-photo-gallery'), {
+  slidesToShow: 1,
+  rewind: true,
+  scrollLock: true,
+  draggable: true,
+  arrows: {
+    prev: '.prev',
+    next: '.next'
+  }
+})

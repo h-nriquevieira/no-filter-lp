@@ -419,6 +419,24 @@ header {
     border-radius: 50%;
 }
 
+.photo-gallery {
+    background-color: #000;
+    display: grid;
+    place-items: center;
+    padding: 3rem;
+    background-image: url(../img/header-bg-2-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: -20% 10%;
+}
+
+@media only screen and (min-width: 1024px) {
+    .photo-gallery {
+        background-size: auto;
+        background-position: -15% 45%;
+    }
+}
+
 .working-hours {
     background-image: url(../img/working-hours-bg.png);
     background-repeat: no-repeat;
@@ -952,6 +970,57 @@ a.a-btn:visited {
     color: #40C1AC;
 }
 
+.photo-gallery {
+    position: relative;
+}
+
+.photo-gallery h2 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.c-photo-gallery {
+    max-width: min(60vw, 800px);
+}
+
+.c-photo-gallery img {
+    max-width: min(50vw, 300px);
+}
+
+.photo-gallery--btns {
+    width: min(90vw, 900px);
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+}
+
+.glider-slide {
+    display:grid;
+    align-items: center;
+}
+/* 
+@media only screen and (max-width: 600px) {
+    .glider-slide {
+        max-width: min(40vw, 800px);
+    }
+} */
+
+.photo-gallery {
+    color: white;
+}
 .working-hours h2 {
     font-weight: 300;
     font-size: 1.25rem;
