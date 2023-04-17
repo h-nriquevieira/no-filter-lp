@@ -996,6 +996,16 @@ a.a-btn:visited {
     max-width: min(50vw, 300px);
 }
 
+.c-photo-gallery .last img {
+    max-height: 240px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .c-photo-gallery .last img {
+        max-height: 399px;
+    }
+}
+
 .photo-gallery--btns {
     width: min(90vw, 900px);
     display: flex;
